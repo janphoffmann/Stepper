@@ -78,7 +78,7 @@
 // ensure this library description is only included once
 #ifndef Stepper_h
 #define Stepper_h
-
+#include "MoreTimers.h"
 // library interface description
 class Stepper {
   public:
@@ -115,6 +115,11 @@ class Stepper {
     int motor_pin_5;          // Only 5 phase motor
 
     unsigned long last_step_time; // timestamp in us of when the last step was taken
+    void timeStep();
+    int steps_left;
+    static bool initialized;
+    MoreTimers _Timer;
+    void nextStep();
 };
 
 #endif
