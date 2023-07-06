@@ -9,8 +9,21 @@ image:https://github.com/{repository-owner}/{repository-name}/actions/workflows/
 
 This library allows you to control unipolar or bipolar stepper motors. To use it you will need a stepper motor, and the appropriate hardware to control it.
 
-For more information about this library please visit us at
-http://www.arduino.cc/en/Reference/{repository-name}
+
+
+
+# This Fork is for ESP32 only
+
+A Timer based Library for stepper running without any delay functions
+
+Usage is exactly like the stepper library from Arduino
+you must have my MoreTimers library as this stepper is running in the TimerISR
+
+
+
+
+
+
 
 == License ==
 
